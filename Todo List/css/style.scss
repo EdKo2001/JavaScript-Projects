@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: green;
+}
+
+.header {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    padding-top: 50px;
+    span {
+        color: goldenrod;
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        color: red;
+    }
+    .header__input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+        
+        input {
+            height: 30px;
+            width: 290px;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            outline: none;
+}
+        button {
+            height: 40px;
+            width: 40px;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            outline: none;
+            border: none;
+            background: white;
+            color: yellow;
+            font-size: 30px;
+            cursor: pointer;
+        }
+}
+
+.main {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+    .item {
+        margin-top: 20px;
+        border-bottom: 4px solid white;
+        padding: 2px;
+    }
+
+    .item__input {
+        background: none;
+        outline: none;
+        color: white;
+        border: none;
+        width: 300px;
+        font-size: 18px;
+    }
+    .item__edit {
+        font-size: 18px;
+        background: none;
+        outline: none;
+        color: goldenrod;
+        border: none;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .item__remove {
+        font-size: 18px;
+        background: none;
+        outline: none;
+        color: red;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.item__input-activate {
+    text-decoration: line-through;
+}
+
+.item__edit-activate {
+    text-decoration: line-through;
+}
+
+.item__remove-activate {
+    text-decoration: line-through;
+}
