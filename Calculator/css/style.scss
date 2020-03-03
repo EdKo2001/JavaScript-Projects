@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: blueviolet;
+    width: 100%;
+    max-width: 178px;
+    margin: 0 auto;
+
+}
+.output {
+    border: 1px solid blueviolet;
+    color: black;
+    background-color: #d6d6d6;
+    height: 30px;
+    padding-top: 3px;
+    font-size: 20px;
+}
+button {
+    width: 17.7%;
+    border:none;
+    outline: 0;
+    margin: 5px;
+    line-height: 2em;
+    cursor: pointer;
+}
