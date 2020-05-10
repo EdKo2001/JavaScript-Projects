@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency API</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                EUR 
+            </td>
+            <td>
+                USD 
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                1 
+            </td>
+            
+            <td>
+                <span id="EUR_USD"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                USD
+            </td>
+            
+            <td>
+                EUR
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                <span id="USD_EUR"></span> 
+            </td>
+        </tr>
+    </table>
+    <div class="calculate">
+        <div class="eur">
+            <label>EUR</label>
+            <input type="number" value="1" id="EUR1">
+            <label>USD</label>
+            <input type="number" value="" id="USD1">
+        
+        </div>
+        <div class="usd">
+            <label>USD</label>
+            <input type="number" value="1" id="USD">
+            <label>EUR</label>
+            <input type="number" value="" id="EUR">
+            <a href="#" class="btn">Convert</a>
+        </div>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

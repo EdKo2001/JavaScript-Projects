@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url("switch.css");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  width: 30%;
+}
+
+.main {
+  font-size: 30px;
+  padding: 50px 0 100px;
+}
+
+.defenition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+.defenition p {
+  font-size: 20px;
+}
+
+/* —-------------— Мобильная навигация —-------------— */
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bottom .bottom__temperature, .bottom .bottom__humidity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.bottom .bottom__temperature span, .bottom .bottom__humidity span {
+  margin-left: 2px;
+}
+
+.bottom .bottom__temperature-iconC {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  body {
+    height: 90vh;
+  }
+  .top {
+    font-size: 40px;
+    width: 60%;
+  }
+  .defenition {
+    width: 40%;
+  }
+  .bottom {
+    width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 90vh;
+  }
+  .top {
+    font-size: 40px;
+    width: 60%;
+  }
+  .defenition {
+    width: 40%;
+  }
+  .bottom {
+    width: 57%;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    height: 90vh;
+  }
+  .top {
+    font-size: 40px;
+    width: 88%;
+  }
+  .defenition {
+    width: 60%;
+  }
+  .bottom {
+    width: 76%;
+  }
+}
+
+@media (max-width: 350px) {
+  .top {
+    font-size: 30px;
+    width: 88%;
+  }
+  .defenition {
+    width: 75%;
+  }
+  .bottom {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

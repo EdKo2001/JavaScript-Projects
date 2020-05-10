@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+}
+table {
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+td {
+    padding: 10px;
+    width: 100px;
+}
+
+tr:nth-child(odd){
+    background-color: blanchedalmond;
+}
+
+tr:nth-child(even){
+    background-color: rgb(175, 139, 84);
+}
+.btn {
+    display: block;
+    height: 25px;
+    width: 100px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    padding: 10px 0 10px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.calculate {
+    margin: auto;
+    width: 310px;
+    
+}
+.calculate input {
+    margin: 20px;
+    width: 80px;
+    font-size: 16px;
+    
+}
+.calculate label {
+    margin-right: -10px;
+}

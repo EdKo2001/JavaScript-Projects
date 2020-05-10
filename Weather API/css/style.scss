@@ -1,0 +1,125 @@
+@import url('switch.css');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    width: 30%;
+}
+
+.main {
+    font-size: 30px;
+    padding: 50px 0 100px;
+}
+
+.defenition {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+     p {
+        font-size: 20px;
+    }
+}
+
+/* —-------------— Мобильная навигация —-------------— */
+
+.bottom {
+    display: flex;
+    align-items: center;
+    width: 28%;
+    justify-content: space-around;
+    .bottom__temperature, .bottom__humidity{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    } 
+    .bottom__temperature span, .bottom__humidity span {
+        margin-left: 2px;
+    }
+    .bottom__temperature-iconC {
+        display: none;
+    }
+}
+
+@media(max-width: 1024px) {
+    body {
+        height: 90vh;
+    }
+
+    .top {
+        font-size: 40px;
+        width: 60%;
+    }
+    .defenition {
+        width: 40%;
+    }
+    .bottom {
+        width: 65%;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        height: 90vh;
+    }
+
+    .top {
+        font-size: 40px;
+        width: 60%;
+    }
+    .defenition {
+        width: 40%;
+    }
+    .bottom {
+        width: 57%;
+    }
+}
+
+@media(max-width: 450px) {
+    body {
+        height: 90vh;
+    }
+
+    .top {
+        font-size: 40px;
+        width: 88%;
+    }
+    .defenition {
+        width: 60%;
+    }
+    .bottom {
+        width: 76%;
+    }
+}
+
+@media(max-width: 350px) {
+    .top {
+        font-size: 30px;
+        width: 88%;
+    }
+    .defenition {
+        width: 75%;
+    }
+    .bottom {
+        width: 100%;
+    }
+}

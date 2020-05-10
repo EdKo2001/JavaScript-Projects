@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Weather API</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <div class="top">
+            <p class="top__timezone"></p>
+            <canvas id="icon" width="128" height="128"></canvas>
+        </div>
+        <div class="switch demo3">
+            <input type="checkbox"  id="switch" checked>
+            <label><i></i></label>
+        </div>
+
+    
+	
+
+   <div class="main">
+        <p class="main__summary"></p>
+   </div>
+
+   <div class="defenition">
+        <p>Temperature:</p>
+        <p>Humidity:</p>
+    </div>
+
+   <div class="bottom">
+       
+        <div class="bottom__temperature">
+            <p class="bottom__temperature-temp"></p>
+            <span class="bottom__temperature-iconF">F</span>
+            <span class="bottom__temperature-iconC">°C</span>
+
+        </div>
+
+        <div class="bottom__humidity">
+            <p class="bottom__humidity-hum"></p>
+            <span class="bottom__humidity-icon">%</span>
+        </div>
+
+   </div>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/skycons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
