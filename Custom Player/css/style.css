@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #334621;
+}
+#main{
+    width: 602px;
+    height: 350px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    overflow: hidden;
+}
+#videoPanel{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#controls{
+    height: 40px;
+    width: 97%;
+    padding: 10px;
+    position: absolute;
+    top:107%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+}
+#main:hover #controls{
+    top:92%;
+}
+#seek-bar{
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+    display: flex;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+#fill{
+    height: 10px;
+    background-color: #DBA74A;
+}
+#currentTime{
+    font-family: monospace;
+    font-size: 14px;
+    color:#DBA74A;
+}
+#playBtn{
+    cursor: pointer;
+}
+input[type=range]{
+    -webkit-appearance : none !important;
+    background-color: #666;
+    height: 4px;
+    border-radius: 4px;
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance : none !important;
+    background-color: #DBA74A;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

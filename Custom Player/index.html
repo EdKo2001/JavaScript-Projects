@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="videoPanel">
+            <video id="myVideo" width="625" height="400" src="1.mp4"></video>
+        </div>
+
+        <div id="controls">
+            <div id="seek-bar">
+                <div id="fill"></div>
+            </div>
+
+            <table border="0">
+                <tr>
+                    <td width="55%">
+                        <div id="currentTime">00:00 / 00:00</div>
+                    </td>
+                    <td width="30%">
+                        <img src="img/Play.png" onclick="playOrPause()" id="playBtn" />
+                    </td>
+                    <td>
+                        <img src="img/Speaker.png" id="speaker" />
+                    </td>
+                    <td>
+                        <input type="range" id="volume" min="0" max="1" value="0.50" step="0.25"
+                            onchange="changeVolume()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
