@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  background-image: url("../img/background.png");
+}
+
+body::-webkit-scrollbar {
+  width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient( 0deg, rgba(67, 5, 89, 1) 0%, rgba(232, 243, 13, 1) 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh black;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+.content {
+  display: flex;
+  margin-top: 50px;
+}
+
+.content-btns {
+  margin: 0 10px;
+}
+
+a {
+  color: inherit;
+}
+
+a:first-of-type {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 16px;
+  color: black;
+  resize: none;
+}
+
+button {
+  font-size: 2.5em;
+  padding: 15px;
+  width: 130px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 3em;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-btns {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
